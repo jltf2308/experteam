@@ -1,55 +1,24 @@
 import {createWebHistory, createRouter} from "vue-router";
 
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Register from '../pages/Register';
-import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
-
-import Books from '../components/Books';
-import AddBook from '../components/AddBook';
-import EditBook from '../components/EditBook';
+import Dashboard from '../pages/Dashboard.vue';
+import Guides from '../pages/Guides.vue';
+import Invoices from '../pages/Invoices.vue';
 
 export const routes = [
     {
-        name: 'home',
-        path: '/',
-        component: Home
-    },
-    {
-        name: 'about',
-        path: '/about',
-        component: About
-    },
-    {
-        name: 'register',
-        path: '/register',
-        component: Register
-    },
-    {
-        name: 'login',
-        path: '/login',
-        component: Login
-    },
-    {
         name: 'dashboard',
-        path: '/dashboard',
+        path: '/',
         component: Dashboard
     },
     {
-        name: 'books',
-        path: '/books',
-        component: Books
+        name: 'guides',
+        path: '/guides',
+        component: Guides
     },
     {
-        name: 'addbook',
-        path: '/books/add',
-        component: AddBook
-    },
-    {
-        name: 'editbook',
-        path: '/books/edit/:id',
-        component: EditBook
+        name: 'invoices',
+        path: '/invoices',
+        component: Invoices
     },
 ];
 

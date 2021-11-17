@@ -1,6 +1,6 @@
 <template>
     <div>
-        Welcome {{ name }}
+        esta es la prueba del dash
     </div>
 </template>
 
@@ -9,19 +9,14 @@ export default {
     name: "Dashboard",
     data() {
         return {
-            name: null,
+            
         }
     },
     created() {
-        if (window.Laravel.user) {
-            this.name = window.Laravel.user.name
-        }
+        
     },
     beforeRouteEnter(to, from, next) {
-        if (!window.Laravel.isLoggedin) {
-            window.location.href = "/";
-        }
-        next();
+        
     }
 }
 </script>
